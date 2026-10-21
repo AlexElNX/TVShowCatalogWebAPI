@@ -22,7 +22,7 @@ A modern web application built with **ASP.NET Core MVC** and **Entity Framework 
 ---
 
 ##  Tech Stack
-- **Framework**: ASP.NET Core MVC (.NET 8/9)
+- **Framework**: ASP.NET Core Web Api (.NET 8/9)
 - **Database**: Microsoft SQL Server
 - **ORM**: Entity Framework Core
-- **Frontend**: Razor Views, Bootstrap 5, Custom CSS
+- **Frontend**: React 
