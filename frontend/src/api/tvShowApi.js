@@ -1,3 +1,5 @@
+import i18n from '../i18n';
+
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'https://localhost:7010').replace(/\/$/, '');
 const API_URL = `${API_BASE_URL}/api/TvShow`;
 
@@ -6,9 +8,7 @@ async function request(url, options = {}) {
     try {
         response = await fetch(url, options);
     } catch (error) {
-        if (error instanceof TypeError) {
-            throw new Error(`Не удалось подключиться к API (${API_BASE_URL}). Убедись, что бэкенд запущен и доверен HTTPS-сертификат localhost.`);
-        }
+        if (error instanceof TypeError) throw new Error(i18n.t('api.connection', {url: API_BASE_URL}));
         throw error;
     }
     if (!response.ok) {
@@ -21,7 +21,7 @@ async function request(url, options = {}) {
             } else message = await response.text();
         } catch { /* keep fallback */
         }
-        throw new Error(message || `Запрос завершился с ошибкой (${response.status}).`);
+        throw new Error(message || i18n.t('api.requestFailed', {status: response.status}));
     }
     if (response.status === 204) return null;
     if (response.status === 201 || response.headers.get('content-type')?.includes('json')) {

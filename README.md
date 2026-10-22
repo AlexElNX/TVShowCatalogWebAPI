@@ -17,6 +17,8 @@ A modern web application built with **ASP.NET Core MVC** and **Entity Framework 
 ![Main Page Header](screenshots/photo6.png)
 ![Main Page Header](screenshots/photo7.png)
 ![Main Page Header](screenshots/photo8.png)
+![Main Page Header](screenshots/photo9.png)
+![Main Page Header](screenshots/photo10.png)
 
 
 ---
