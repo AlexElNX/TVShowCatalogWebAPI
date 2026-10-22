@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL;
+using TVShowCatalog.DAL.Interfaces;
+using TVShowCatalog.DAL.Models;
+using TVShowCatalog.Interfaces;
+using TVShowCatalog.Services;
 using TVShowCatalog.Services.Extensions;
 
 namespace TVShowCatalog
@@ -32,6 +36,9 @@ namespace TVShowCatalog
             });
 
             builder.Services.AddApplicationServices();
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ITvShowService, TvShowService>();
 
             var app = builder.Build();
 

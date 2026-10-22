@@ -1,28 +1,29 @@
-using Microsoft.EntityFrameworkCore;
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL.Interfaces;
+using TVShowCatalog.DAL.Models;
 using TVShowCatalog.Interfaces;
+
 
 namespace TVShowCatalog.Services
 {
     public class TvShowService : ITvShowService
     {
-        private readonly IRepository<TvShow> _repository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public TvShowService(IRepository<TvShow> repository, IWebHostEnvironment webHostEnvironment)
+        public TvShowService(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
-            _repository = repository;
+            _unitOfWork = unitOfWork;
             _webHostEnvironment = webHostEnvironment;
         }
 
         public async Task<IEnumerable<TvShow>> GetAllAsync()
         {
-            return await _repository.GetAllAsync();
+            return await _unitOfWork.TvShows.GetAllAsync();
         }
 
         public async Task<TvShow?> GetByIdAsync(int id)
         {
-            return await _repository.GetByIdAsync(id);
+            return await _unitOfWork.TvShows.GetByIdAsync(id);
         }
 
         public async Task CreateAsync(TvShow tvShow, IFormFile? posterFile)
@@ -32,26 +33,34 @@ namespace TVShowCatalog.Services
                 tvShow.Poster = await SavePosterAsync(posterFile);
             }
 
-            await _repository.CreateAsync(tvShow);
+            await _unitOfWork.TvShows.CreateAsync(tvShow);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task<bool> UpdateAsync(TvShow tvShow, IFormFile? posterFile)
         {
-            var existingShow = _repository.GetByIdAsync(tvShow.Id);
+            var existingShow = await _unitOfWork.TvShows.GetByIdAsync(tvShow.Id);
             if(existingShow == null) return false;
+
+            existingShow.Title = tvShow.Title;
+            existingShow.Showrunner = tvShow.Showrunner;
+            existingShow.Genre = tvShow.Genre;
+            existingShow.Premiere = tvShow.Premiere;
+            existingShow.Description = tvShow.Description;
+
 
             if (posterFile != null && posterFile.Length > 0)
             {
-                tvShow.Poster = await SavePosterAsync(posterFile);
+                existingShow.Poster = await SavePosterAsync(posterFile);
             }
-
-            await _repository.UpdateAsync(tvShow);
+    
+            await _unitOfWork.SaveChangesAsync();
             return true;
         }
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var tvShow = await _repository.GetByIdAsync(id);
+            var tvShow = await _unitOfWork.TvShows.GetByIdAsync(id);
             if (tvShow == null) return false;
 
             if (!string.IsNullOrEmpty(tvShow.Poster))
@@ -63,7 +72,8 @@ namespace TVShowCatalog.Services
                 }
             }
 
-            await _repository.DeleteAsync(id);
+            await _unitOfWork.TvShows.DeleteAsync(id);
+            await _unitOfWork.SaveChangesAsync();
             return true;
         }
 

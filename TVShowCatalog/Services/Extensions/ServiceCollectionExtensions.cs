@@ -1,5 +1,5 @@
 using TVShowCatalog.Interfaces;
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL.Models;
 using TVShowCatalog.Repositories;
 
 namespace TVShowCatalog.Services.Extensions

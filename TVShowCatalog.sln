@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36429.23 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12224.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVShowCatalog", "TVShowCatalog.csproj", "{2F8D77EB-079C-44FF-8457-0888B34DB5F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVShowCatalog", "TVShowCatalog\TVShowCatalog.csproj", "{DE79660F-C987-09EF-05EC-97DC1BC21E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVShowCatalog.DAL", "TVShowCatalog.DAL\TVShowCatalog.DAL.csproj", "{6118346C-3197-F521-DA3E-519F9FAC3598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F8D77EB-079C-44FF-8457-0888B34DB5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F8D77EB-079C-44FF-8457-0888B34DB5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F8D77EB-079C-44FF-8457-0888B34DB5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F8D77EB-079C-44FF-8457-0888B34DB5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE79660F-C987-09EF-05EC-97DC1BC21E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE79660F-C987-09EF-05EC-97DC1BC21E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE79660F-C987-09EF-05EC-97DC1BC21E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE79660F-C987-09EF-05EC-97DC1BC21E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6118346C-3197-F521-DA3E-519F9FAC3598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6118346C-3197-F521-DA3E-519F9FAC3598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6118346C-3197-F521-DA3E-519F9FAC3598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6118346C-3197-F521-DA3E-519F9FAC3598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using TVShowCatalog.ValidationAttributes;
 
-namespace TVShowCatalog.Models
+namespace TVShowCatalog.DAL.Models
 {
     public class TvShow
     {

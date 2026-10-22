@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TVShowCatalog.Interfaces;
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL.Models;
 
 namespace TVShowCatalog.Repositories
 {

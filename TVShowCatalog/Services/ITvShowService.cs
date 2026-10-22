@@ -1,4 +1,4 @@
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL.Models;
 
 namespace TVShowCatalog.Interfaces
 {

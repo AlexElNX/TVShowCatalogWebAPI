@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F8D77EB-079C-44FF-8457-0888B34DB5F6}|TVShowCatalog.csproj|d:\\programming\\asp .net\\tvshowcatalogwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F8D77EB-079C-44FF-8457-0888B34DB5F6}|TVShowCatalog.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE79660F-C987-09EF-05EC-97DC1BC21E84}|TVShowCatalog\\TVShowCatalog.csproj|d:\\programming\\asp .net\\tvshowcatalogwebapi\\tvshowcatalog\\services\\tvshowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE79660F-C987-09EF-05EC-97DC1BC21E84}|TVShowCatalog\\TVShowCatalog.csproj|solutionrelative:tvshowcatalog\\services\\tvshowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6118346C-3197-F521-DA3E-519F9FAC3598}|TVShowCatalog.DAL\\TVShowCatalog.DAL.csproj|d:\\programming\\asp .net\\tvshowcatalogwebapi\\tvshowcatalog.dal\\models\\tvshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6118346C-3197-F521-DA3E-519F9FAC3598}|TVShowCatalog.DAL\\TVShowCatalog.DAL.csproj|solutionrelative:tvshowcatalog.dal\\models\\tvshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwCwAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TvShow.cs",
+              "DocumentMoniker": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\TVShowCatalog.DAL\\Models\\TvShow.cs",
+              "RelativeDocumentMoniker": "TVShowCatalog.DAL\\Models\\TvShow.cs",
+              "ToolTip": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\TVShowCatalog.DAL\\Models\\TvShow.cs",
+              "RelativeToolTip": "TVShowCatalog.DAL\\Models\\TvShow.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T04:45:09.326Z",
+              "WhenOpened": "2026-10-22T03:12:03.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TvShowService.cs",
+              "DocumentMoniker": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\TVShowCatalog\\Services\\TvShowService.cs",
+              "RelativeDocumentMoniker": "TVShowCatalog\\Services\\TvShowService.cs",
+              "ToolTip": "D:\\Programming\\ASP .NET\\TVShowCatalogWebAPI\\TVShowCatalog\\Services\\TvShowService.cs",
+              "RelativeToolTip": "TVShowCatalog\\Services\\TvShowService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAlwDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:46:11.504Z",
               "EditorCaption": ""
             }
           ]

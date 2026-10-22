@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace TVShowCatalog.Models
+namespace TVShowCatalog.DAL.Models
 {
     public class TvShowContext : DbContext
     {

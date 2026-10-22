@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TVShowCatalog.Models;
+using TVShowCatalog.DAL.Models;
 using TVShowCatalog.Interfaces;
 
 namespace TVShowCatalog.Controllers
