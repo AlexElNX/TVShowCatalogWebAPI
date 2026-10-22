@@ -1,11 +1,10 @@
-#  TV Shows Catalog (ASP.NET Core MVC)
+#  TV Shows Catalog (ASP.NET Core Web API)
 
-A modern web application built with **ASP.NET Core MVC** and **Entity Framework Core (SQL Server)** that showcases a curated list of top television series.
+A modern web application built with **ASP.NET Core Web API** and **Entity Framework Core (SQL Server)** that showcases a curated list of top television series.
 
 ##  Features
 - **Database Integration**: Fetches show details (Title, Showrunner, Genre, Premiere Date, Poster, Description) dynamically from SQL Server.
 - **Entity Framework Core**: Code-First architecture with automated table initialization and seeding.
-- **Modern UI**: Custom dark-themed layout built with Bootstrap 5 and CSS grid.
 
 ##  Screenshots
 
